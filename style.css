@@ -20,14 +20,19 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #333;
+  background-image: url('./imagens/neon.jpg');
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 
 h1 {
   color: #fff;
   margin: 20px 0;
 }
+
 
 .area-geral {
   display: flex;
@@ -39,7 +44,7 @@ h1 {
 .player1 {
   width: 120px;
   height: 120px;
-  background-color: rgba(87, 164, 167, 0.692);
+  background-color: rgba(87, 164, 167);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,7 +53,6 @@ h1 {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
 
 }
-
 
 .player2{
   width: 120px;
@@ -89,7 +93,7 @@ element.style{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 30px;
-  border: 1px solid #fff;
+  border: 0px solid rgba(36, 163, 180, 0.548);
   margin-left: 30px;
   margin-right: 30px;
 }
@@ -106,27 +110,31 @@ element.style{
   cursor: pointer;
 }
 .item:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(36, 163, 180, 0.548);
 }
 
 .item.t {
-  border-top: 1px solid #fff;
+  border-top: 2px solid rgba(36, 163, 180, 0.548);
 }
 .item.l {
-  border-left: 1px solid #fff;
+  border-left: 2px solid rgba(36, 163, 180, 0.548);
 }
 .item.r {
-  border-right: 1px solid #fff;
+  border-right: 2px solid rgba(36, 163, 180, 0.548);
 }
 .item.b {
-  border-bottom: 1px solid #fff;
+  border-bottom: 2px solid rgba(36, 163, 180, 0.548);
 }
 
 .info {
   width: 300px;
   display: flex;
-  margin-top: 30px;
-  border: 1px dotted #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  border: 3px double;
+  background-color: rgba(77, 161, 189, 0.301);
+  
   padding: 10px;
 }
 .infoitem {
@@ -139,25 +147,33 @@ element.style{
 }
 .infocorpo {
   text-align: center;
-  color: #fff;
+  color: #ffff00 ;
   font-size: 20px;
 }
 
 .reset {
-  border: 1px solid #000;
-  background-color: rgba(0, 0, 0, 0.2);
-  color: #fff;
+  border: 3px solid;
+  background-color: #fff);
+  color: #5555dd;
   padding: 15px;
   margin-top: 20px;
+  margin-bottom: 26px;
   border-radius: 8px;
+  
+  
 }
 
 .reset:hover {
+  background: rgba(53, 206, 226, 0.473);
+  line-height: 1.5;
+  font: 700 1,2rem 'Roboto Slab' sans-serif;
   cursor: pointer;
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+
+  &:focus { outline:  2px dotted #5555dd;}
 }
+
 
 @media (max-width: 500px) {
 
@@ -178,6 +194,7 @@ element.style{
   }
 
   .info, .reset {
+    margin-top: 30px;
     margin-bottom: 50px;
     
   }

@@ -82,7 +82,7 @@ function checkGame() {
       document.querySelector('.player2 img').setAttribute('src', './imagens/lost.png');
       animationWin()
   }else if (checkWinnerFor('o')) {
-      warning = 'Player 2 venceu!';
+      warning = 'layer 2 venceu!';
       playing = false; 
       document.querySelector('.player1 img').setAttribute('src', './imagens/lost.png');
       document.querySelector('.player2 img').setAttribute('src', './imagens/won.png');
