@@ -1,6 +1,6 @@
 
-<h1 align="center">
-  <img src="https://i.pinimg.com/originals/0b/cd/55/0bcd55d23ddd537787bf42cd7d0c4ae1.gif" width="10%">
+  ![videotictactoe](https://user-images.githubusercontent.com/72313767/171675233-dc0f8eca-1fde-47cc-a4d3-446dfbc9eec2.gif)
+
 </h1>
 
 
